@@ -37,7 +37,6 @@ def getTempFar(lat, lon, date):
 
     response = requests.get(url, headers=headers)
     data = response.json()
-    print(data['timelines']['hourly'])
 
     timetemp = data['timelines']['hourly']
 
